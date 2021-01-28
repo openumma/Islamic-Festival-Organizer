@@ -6,7 +6,7 @@
     tools:context=".ui.ListUstad.ListUstadFragment">
 
     <androidx.recyclerview.widget.RecyclerView
-        android:id="@+id/rv_data_hadroh"
+        android:id="@+id/rv_data_ustad"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         tools:listitem="@layout/item_hadroh"/>

@@ -7,28 +7,94 @@
     android:orientation="vertical"
     tools:context=".ui.Info.InfoFragment">
 
-    <ImageView
-        android:id="@+id/imageView3"
-        android:layout_width="250dp"
-        android:layout_height="250dp"
-        android:layout_marginStart="80dp"
-        android:layout_marginLeft="80dp"
-        android:layout_marginTop="40dp"
-        android:src="@drawable/logoispo"
+    <ScrollView
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent">
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="132dp"
-        android:layout_marginLeft="132dp"
-        android:layout_marginTop="20dp"
-        android:text="DESKRIPSI"
-        android:textSize="30dp"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/imageView3" />
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <ImageView
+                    android:id="@+id/imageView3"
+                    android:layout_width="250dp"
+                    android:layout_height="250dp"
+                    android:layout_marginStart="80dp"
+                    android:layout_marginLeft="80dp"
+                    android:layout_marginTop="4dp"
+                    android:src="@drawable/logoispo"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
 
+                <TextView
+                    android:id="@+id/textView2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="132dp"
+                    android:layout_marginLeft="132dp"
+                    android:layout_marginTop="20dp"
+                    android:text="DESKRIPSI"
+                    android:textSize="30dp"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/imageView3" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:padding="10dp"
+                android:background="@drawable/rectangle"
+                android:layout_width="350dp"
+                android:layout_height="180dp"
+                android:layout_marginStart="28dp"
+                android:layout_marginLeft="28dp"
+                android:layout_marginTop="64dp"
+                app:layout_constraintStart_toStartOf="parent"
+                android:orientation="vertical"
+                app:layout_constraintTop_toBottomOf="@+id/textView2">
+
+                <TextView
+                    android:layout_gravity="center"
+                    android:text="INFO DONASI :"
+                    android:textStyle="bold"
+                    android:textSize="24dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+                <TextView
+                    android:text="NO. REKENING :"
+                    android:textStyle="bold"
+                    android:textSize="24dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+                <TextView
+                    android:text="167108235737 a.n Rafliandi"
+                    android:textStyle="bold"
+                    android:textSize="14dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+                <TextView
+                    android:text="PENYALURAN DONASI :"
+                    android:textStyle="bold"
+                    android:textSize="24dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+                <TextView
+                    android:text="Marbot, Lembaga Sosial, dan Pengembangan Aplikasi"
+                    android:textStyle="bold"
+                    android:textSize="14dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+
+            </LinearLayout>
+        </LinearLayout>
+
+
+    </ScrollView>
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

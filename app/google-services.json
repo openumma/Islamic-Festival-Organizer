@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "512261985020",
+    "project_id": "ummahackathon",
+    "storage_bucket": "ummahackathon.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:512261985020:android:aaa2445d195e7ba4503d79",
+        "android_client_info": {
+          "package_name": "com.example.ummahackathon"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "512261985020-2h5ku8d39jvjd1t9g0d9vkbsebvr9mee.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyB0wKS5Yybbpi-FDSURO-1CFr2zH3SLrEE"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "512261985020-2h5ku8d39jvjd1t9g0d9vkbsebvr9mee.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
