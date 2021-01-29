@@ -18,11 +18,11 @@
 
             <ImageView
                 android:id="@+id/foto_Hadroh"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
+                android:src="@drawable/hadroh"
+                android:layout_width="130dp"
+                android:layout_height="130dp"
                 android:layout_gravity="center"
-                android:layout_marginTop="40dp"
-                tools:srcCompat="@tools:sample/avatars" />
+                android:layout_marginTop="40dp" />
 
             <LinearLayout
                 android:layout_width="match_parent"
@@ -89,54 +89,6 @@
                 android:layout_marginBottom="10dp"
                 android:orientation="horizontal">
 
-                <LinearLayout
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_marginRight="74dp"
-                    android:orientation="vertical">
-
-                    <TextView
-                        android:id="@+id/textView_umurHadroh"
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:text="Umur"
-                        android:textColor="@color/black"
-                        android:textSize="20sp"
-                        android:textStyle="bold" />
-
-                </LinearLayout>
-
-                <LinearLayout
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_marginRight="10dp"
-                    android:orientation="vertical">
-
-                    <TextView
-                        android:id="@+id/twodot2"
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:text=":"
-                        android:textColor="@color/black"
-                        android:textSize="20sp"
-                        android:textStyle="bold" />
-
-                </LinearLayout>
-
-                <LinearLayout
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:orientation="vertical">
-
-                    <TextView
-                        android:id="@+id/umurHadroh"
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:text="500 BC"
-                        android:textColor="@color/black"
-                        android:textSize="20sp" />
-
-                </LinearLayout>
             </LinearLayout>
 
             <LinearLayout
@@ -203,54 +155,9 @@
                 android:layout_marginBottom="10dp"
                 android:orientation="horizontal">
 
-                <LinearLayout
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_marginRight="79dp"
-                    android:orientation="vertical">
 
-                    <TextView
-                        android:id="@+id/textView_karirHadroh"
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:text="Karir"
-                        android:textColor="@color/black"
-                        android:textSize="20sp"
-                        android:textStyle="bold" />
 
-                </LinearLayout>
 
-                <LinearLayout
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_marginRight="10dp"
-                    android:orientation="vertical">
-
-                    <TextView
-                        android:id="@+id/twodot4"
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:text=":"
-                        android:textColor="@color/black"
-                        android:textSize="20sp"
-                        android:textStyle="bold" />
-
-                </LinearLayout>
-
-                <LinearLayout
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:orientation="vertical">
-
-                    <TextView
-                        android:id="@+id/karirHadroh"
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:text="SD Para Mandiri3 LubukLinggau, SMP Xaverius 12 Palangkaraya, SMA Ignatius SP Padang"
-                        android:textColor="@color/black"
-                        android:textSize="20sp" />
-
-                </LinearLayout>
             </LinearLayout>
 
             <LinearLayout
@@ -318,22 +225,21 @@
                 android:gravity="center">
 
                 <Button
-                    android:id="@+id/button_TontonVid"
+                    android:id="@+id/btn_jadwal_hadroh"
                     android:layout_width="160dp"
                     android:layout_height="40dp"
                     android:layout_marginHorizontal="10dp"
                     android:textStyle="bold"
-                    android:textColor="#2D2B2B"
-                    android:background="#2B2B2B"
-                    android:text="Tonton Video"
+                    android:textColor="@color/black"
+                    android:text="JADWAL"
                     app:backgroundTint="#F0F0F0" />
 
                 <Button
-                    android:id="@+id/button_BuatPesanan"
+                    android:id="@+id/btn_video_hadroh"
                     android:layout_width="160dp"
                     android:layout_height="40dp"
                     android:layout_marginHorizontal="10dp"
-                    android:text="Buat Pesanan"
+                    android:text="Video"
                     android:textColor="#2D2B2B"
                     android:textStyle="bold"
                     app:backgroundTint="#F0F0F0" />

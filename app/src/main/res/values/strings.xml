@@ -14,4 +14,10 @@
     <string name="menu_info">Info</string>
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="tentang_text"> Kami menghadirkan aplikasi berbasis android bernama ISFO. Suatu platform yang dapat menjadi penyedia layanan informasi dan komunikasi dalam menghubungkan pengisi acara dengan pihak penyelenggara maupun jamaah suatu kegiatan islami secara mudah, cepat dan praktis.</string>
+    <string name="visi">Terbentuknya masyarakat yang paham akan Aqidah dan syariaah islam melalui metode dakwah berupa kegiatan islam dalam ruang lingkup masyarakat.</string>
+    <string name="misi">Membantu menyukseskan penyelenggaraan kegiatan islami secara mudah, cepat dan praktis dengan memanfaatkan kecanggihan teknologi.</string>
+    <string name="donasi">Untuk memberikan support pada aplikasi kami dan melakukan sedekah kepada pihak yang membutukan anda dapat memberikan donasi terbaik anda. Donasi tersebut akan disalurkan untuk diantaranya :</string>
+    <string name="text_donasi">50 % Pengelolaan Aplikasi <br>25 % Lembaga Sosial </br> <br>25 % Marbot Masjid</br></string>
+    <string name="campaign">Ayo bersama sukseskan penyelenggarakan kegiatan islami melalui Aplikasi ISFO.</string>
 </resources>

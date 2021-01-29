@@ -31,7 +31,7 @@
                 <ImageView
                     android:layout_gravity="center"
                     android:id="@+id/iv_ustad"
-                    android:src="@drawable/logo_ustad"
+                    android:src="@drawable/ustad"
                     android:layout_width="80dp"
                     android:layout_height="80dp"/>
                 <TextView
@@ -39,7 +39,7 @@
                     android:layout_gravity="center"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="FIND USTAD"/>
+                    android:text="USTAD"/>
             </LinearLayout>
             <LinearLayout
                 android:padding="15dp"
@@ -50,7 +50,7 @@
 
                     android:layout_gravity="center"
                     android:id="@+id/iv_qori"
-                    android:src="@drawable/logo_ustad"
+                    android:src="@drawable/qori"
                     android:layout_width="80dp"
                     android:layout_height="80dp"/>
                 <TextView
@@ -58,7 +58,7 @@
                     android:layout_gravity="center"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="FIND QO'RI"/>
+                    android:text="QORI'"/>
             </LinearLayout>
             <LinearLayout
                 android:orientation="vertical"
@@ -68,7 +68,7 @@
                 <ImageView
                     android:layout_gravity="center"
                     android:id="@+id/iv_hadroh"
-                    android:src="@drawable/logo_ustad"
+                    android:src="@drawable/hadroh"
                     android:layout_width="80dp"
                     android:layout_height="80dp"/>
                 <TextView
@@ -76,7 +76,7 @@
                     android:layout_gravity="center"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="FIND HADROH"/>
+                    android:text="HADROH"/>
             </LinearLayout>
         </LinearLayout>
     </androidx.cardview.widget.CardView>
@@ -90,7 +90,10 @@
         app:cardCornerRadius="10dp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/cardView">
-
+        <ImageView
+            android:src="@drawable/poster_dua"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"/>
     </androidx.cardview.widget.CardView>
 
     <androidx.cardview.widget.CardView
@@ -102,6 +105,9 @@
         app:cardCornerRadius="10dp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/cardView">
-
+        <ImageView
+            android:src="@drawable/poster_satu"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"/>
     </androidx.cardview.widget.CardView>
 </androidx.constraintlayout.widget.ConstraintLayout>

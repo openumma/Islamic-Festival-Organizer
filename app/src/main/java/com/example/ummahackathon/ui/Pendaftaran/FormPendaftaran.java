@@ -1,9 +1,7 @@
-package com.example.ummahackathon;
+package com.example.ummahackathon.ui.Pendaftaran;
 
 import androidx.annotation.RequiresApi;
 import androidx.appcompat.app.AppCompatActivity;
-import androidx.fragment.app.Fragment;
-import androidx.fragment.app.FragmentManager;
 
 import android.app.DatePickerDialog;
 import android.content.Intent;
@@ -19,7 +17,7 @@ import com.example.ummahackathon.R;
 import com.example.ummahackathon.Rest.ApiClient;
 import com.example.ummahackathon.Rest.ApiInterface;
 import com.example.ummahackathon.ui.Detail.DetailUstadActivity;
-import com.example.ummahackathon.ui.Home.HomeFragment;
+import com.example.ummahackathon.ui.ReportPendaftaran.ReportPendaftaran;
 
 import java.text.SimpleDateFormat;
 import java.util.Calendar;
@@ -123,7 +121,7 @@ public class FormPendaftaran extends AppCompatActivity {
             @Override
             public void onResponse(Call<PostDataPendaftaran> call, Response<PostDataPendaftaran> response) {
                 if (response.isSuccessful()){
-                    Intent intent = new Intent(FormPendaftaran.this,ReportPendaftaran.class);
+                    Intent intent = new Intent(FormPendaftaran.this, ReportPendaftaran.class);
                     startActivity(intent);
                 }
             }

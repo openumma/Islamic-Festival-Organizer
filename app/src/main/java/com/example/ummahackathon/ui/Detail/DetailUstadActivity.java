@@ -2,7 +2,6 @@ package com.example.ummahackathon.ui.Detail;
 
 import androidx.appcompat.app.AppCompatActivity;
 
-import android.content.Context;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
@@ -10,7 +9,7 @@ import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.TextView;
 
-import com.example.ummahackathon.FormPendaftaran;
+import com.example.ummahackathon.ui.Pendaftaran.FormPendaftaran;
 import com.example.ummahackathon.Model.GetDetailUstad;
 import com.example.ummahackathon.Model.ListDataUstad;
 import com.example.ummahackathon.R;

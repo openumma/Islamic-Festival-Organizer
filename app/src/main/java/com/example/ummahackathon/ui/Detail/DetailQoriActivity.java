@@ -2,10 +2,13 @@ package com.example.ummahackathon.ui.Detail;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Intent;
 import android.os.Bundle;
+import android.view.View;
+import android.widget.Button;
 import android.widget.TextView;
 
-import com.example.ummahackathon.Model.GetDataQori;
+import com.example.ummahackathon.ui.Pendaftaran.FormPendaftaran;
 import com.example.ummahackathon.Model.GetDetailQori;
 import com.example.ummahackathon.Model.ListDataQori;
 import com.example.ummahackathon.R;
@@ -21,6 +24,7 @@ import retrofit2.Response;
 public class DetailQoriActivity extends AppCompatActivity {
     TextView tv_nama_qori,tv_umur_qori,tv_alamat_qori,tv_karir_qori,tv_deskripsi_qori;
     ApiInterface apiInterface;
+    Button btn_daftar;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -30,6 +34,16 @@ public class DetailQoriActivity extends AppCompatActivity {
         tv_alamat_qori = findViewById(R.id.alamatQori);
         tv_karir_qori = findViewById(R.id.karirQori);
         tv_deskripsi_qori = findViewById(R.id.descQori);
+        btn_daftar = findViewById(R.id.btn_hubungi_qori);
+        btn_daftar.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Bundle getdata = getIntent().getExtras();
+                Intent myIntent = new Intent(getBaseContext(), FormPendaftaran.class);
+                myIntent.putExtra("id",getdata.getString("id"));
+                startActivity(myIntent);
+            }
+        });
         apiInterface = ApiClient.getClient("http://192.168.56.1/UmmaHackathonAPI/api/").create(ApiInterface.class);
         response();
     }

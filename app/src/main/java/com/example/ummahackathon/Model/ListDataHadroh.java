@@ -3,6 +3,16 @@ package com.example.ummahackathon.Model;
 public class ListDataHadroh {
     String id;
     String nama_hadroh;
+    String alamat;
+
+    public String getAlamat() {
+        return alamat;
+    }
+
+    public void setAlamat(String alamat) {
+        this.alamat = alamat;
+    }
+
     String deskripsi;
     String link_video;
 
@@ -11,6 +21,7 @@ public class ListDataHadroh {
         return "ListDataHadroh{" +
                 "id='" + id + '\'' +
                 ", nama_hadroh='" + nama_hadroh + '\'' +
+                ", alamat='" + alamat + '\'' +
                 ", deskripsi='" + deskripsi + '\'' +
                 ", link_video='" + link_video + '\'' +
                 '}';

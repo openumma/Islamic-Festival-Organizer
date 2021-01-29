@@ -18,11 +18,11 @@
 
             <ImageView
                 android:id="@+id/foto_Qori"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
+                android:layout_width="130dp"
+                android:layout_height="130dp"
                 android:layout_gravity="center"
                 android:layout_marginTop="40dp"
-                tools:srcCompat="@tools:sample/avatars" />
+                android:src="@drawable/qori"/>
 
             <LinearLayout
                 android:layout_width="match_parent"
@@ -318,22 +318,22 @@
                 android:gravity="center">
 
                 <Button
-                    android:id="@+id/button_TontonVid"
+                    android:id="@+id/btn_jadwal_qori"
                     android:layout_width="160dp"
                     android:layout_height="40dp"
                     android:layout_marginHorizontal="10dp"
                     android:textStyle="bold"
                     android:textColor="#2D2B2B"
                     android:background="#2B2B2B"
-                    android:text="Tonton Video"
+                    android:text="JADWAL"
                     app:backgroundTint="#F0F0F0" />
 
                 <Button
-                    android:id="@+id/button_BuatPesanan"
+                    android:id="@+id/btn_video_qori"
                     android:layout_width="160dp"
                     android:layout_height="40dp"
                     android:layout_marginHorizontal="10dp"
-                    android:text="Buat Pesanan"
+                    android:text="VIDEO"
                     android:textColor="#2D2B2B"
                     android:textStyle="bold"
                     app:backgroundTint="#F0F0F0" />
