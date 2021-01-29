@@ -57,7 +57,9 @@ public class ListUstadAdapter extends RecyclerView.Adapter<ListUstadAdapter.List
                 @Override
                 public void onClick(View view) {
                     int position = getAdapterPosition();
+                    listDataUstad.get(position);
                     Intent intent = new Intent(view.getContext(), DetailUstadActivity.class);
+                    intent.putExtra("id",listDataUstad.get(position).getId());
                     view.getContext().startActivity(intent);
                 }
             });

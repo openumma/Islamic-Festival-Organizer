@@ -44,8 +44,7 @@
                 android:layout_marginHorizontal="40dp"
                 android:layout_marginTop="10dp"
                 android:layout_marginBottom="20dp"
-                android:ems="10"
-                android:inputType="numberDecimal" />
+                android:ems="10" />
 
             <TextView
                 android:id="@+id/textView_Email"
@@ -64,8 +63,7 @@
                 android:layout_marginHorizontal="40dp"
                 android:layout_marginTop="10dp"
                 android:layout_marginBottom="20dp"
-                android:ems="10"
-                android:inputType="numberDecimal" />
+                android:ems="10" />
 
             <TextView
                 android:id="@+id/textView_no_handphone"
@@ -78,6 +76,7 @@
                 android:textColor="@color/black"/>
 
             <EditText
+
                 android:id="@+id/editText_no_handphone"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -104,8 +103,7 @@
                 android:layout_marginHorizontal="40dp"
                 android:layout_marginTop="10dp"
                 android:layout_marginBottom="20dp"
-                android:ems="10"
-                android:inputType="numberDecimal" />
+                android:ems="10" />
             <TextView
                 android:id="@+id/textView_tema"
                 android:layout_width="match_parent"
@@ -123,8 +121,7 @@
                 android:layout_marginHorizontal="40dp"
                 android:layout_marginTop="10dp"
                 android:layout_marginBottom="20dp"
-                android:ems="10"
-                android:inputType="numberDecimal" />
+                android:ems="10"/>
 
             <TextView
                 android:id="@+id/textView_JlhPeserta"
@@ -164,6 +161,7 @@
                 android:layout_marginTop="10dp"
                 android:layout_marginBottom="20dp"
                 android:ems="10"
+                android:hint="DD/MM/YYYY"
                 android:inputType="date" />
 
             <TextView
@@ -171,7 +169,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginHorizontal="40dp"
-                android:text="Waktu Kegiatan : "
+                android:text="Durasi Kegiatan : "
                 android:textSize="20sp"
                 android:textStyle="bold"
                 android:textColor="@color/black"/>
@@ -183,8 +181,7 @@
                 android:layout_marginHorizontal="40dp"
                 android:layout_marginTop="10dp"
                 android:layout_marginBottom="20dp"
-                android:ems="10"
-                android:inputType="date" />
+                android:ems="10"/>
 
             <TextView
                 android:id="@+id/textView_JamMulai"
@@ -203,8 +200,7 @@
                 android:layout_marginHorizontal="40dp"
                 android:layout_marginTop="10dp"
                 android:layout_marginBottom="20dp"
-                android:ems="10"
-                android:inputType="time" />
+                android:ems="10" />
 
             <TextView
                 android:id="@+id/textView_JamSelesai"
@@ -223,8 +219,7 @@
                 android:layout_marginHorizontal="40dp"
                 android:layout_marginTop="10dp"
                 android:layout_marginBottom="20dp"
-                android:ems="10"
-                android:inputType="time" />
+                android:ems="10"/>
 
             <LinearLayout
                 android:layout_width="match_parent"
@@ -234,19 +229,19 @@
                 android:gravity="center">
 
                 <Button
-                    android:id="@+id/button_TontonVid"
+                    android:id="@+id/btn_batal"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginHorizontal="10dp"
-                    android:text="Tonton Video"
+                    android:text="Batal"
                     app:backgroundTint="#B34B4B" />
 
                 <Button
-                    android:id="@+id/button_BuatPesanan"
+                    android:id="@+id/btn_kirim"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginHorizontal="10dp"
-                    android:text="Buat Pesanan"
+                    android:text="Kirim"
                     app:backgroundTint="#608A2F" />
 
             </LinearLayout>

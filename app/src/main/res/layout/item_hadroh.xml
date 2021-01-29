@@ -39,6 +39,7 @@
                 android:layout_height="wrap_content"/>
         </LinearLayout>
         <Button
+            android:id="@+id/btn_hadroh"
             android:layout_marginTop="60dp"
             android:layout_marginStart="160dp"
             android:layout_marginLeft="20dp"
