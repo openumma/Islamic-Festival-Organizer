@@ -133,16 +133,21 @@
                     app:layout_constraintTop_toBottomOf="@+id/imageView3" />
 
                 <LinearLayout
-                    android:paddingLeft="40dp"
+                    android:paddingTop="15dp"
+                    android:paddingLeft="50dp"
                     android:paddingRight="35dp"
                     android:orientation="horizontal"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent">
                     <Button
+
+                        android:text="PREMIUM"
                         android:layout_width="150dp"
                         android:layout_height="wrap_content"/>
                     <Button
+                        android:layout_marginLeft="15dp"
                         android:layout_width="150dp"
+                        android:text="DONASI"
                         android:layout_height="wrap_content"/>
                 </LinearLayout>
             </LinearLayout>

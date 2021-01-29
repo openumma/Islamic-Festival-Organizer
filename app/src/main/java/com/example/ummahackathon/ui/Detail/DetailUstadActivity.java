@@ -9,12 +9,14 @@ import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.TextView;
 
+import com.example.ummahackathon.ui.Jadwal.JadwalPengisiAcaraActivity;
 import com.example.ummahackathon.ui.Pendaftaran.FormPendaftaran;
 import com.example.ummahackathon.Model.GetDetailUstad;
 import com.example.ummahackathon.Model.ListDataUstad;
 import com.example.ummahackathon.R;
 import com.example.ummahackathon.Rest.ApiClient;
 import com.example.ummahackathon.Rest.ApiInterface;
+import com.example.ummahackathon.ui.Video.VideoActivity;
 
 import java.util.List;
 
@@ -24,7 +26,7 @@ import retrofit2.Response;
 
 public class DetailUstadActivity extends AppCompatActivity {
     TextView tv_nama_ustad,tv_umur_ustad,tv_alamat_ustad,tv_karir_ustad,tv_deskripsi_ustad;
-    Button btn_daftar;
+    Button btn_daftar,btn_video_ustad,btn_jadwal_ustad;
     ApiInterface apiInterface;
     ImageView iv_foto;
     @Override
@@ -38,7 +40,21 @@ public class DetailUstadActivity extends AppCompatActivity {
         tv_deskripsi_ustad = findViewById(R.id.descPenceramah);
         iv_foto = findViewById(R.id.foto_penceramah);
         btn_daftar = findViewById(R.id.btn_hubungi_ustad);
-
+        btn_video_ustad = findViewById(R.id.btn_video_ustad);
+        btn_video_ustad.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(DetailUstadActivity.this, VideoActivity.class);
+                startActivity(intent);
+            }
+        });
+        btn_jadwal_ustad.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(DetailUstadActivity.this, JadwalPengisiAcaraActivity.class);
+                startActivity(intent);
+            }
+        });
         apiInterface = ApiClient.getClient("http://192.168.56.1/UmmaHackathonAPI/api/").create(ApiInterface.class);
         response();
         btn_daftar.setOnClickListener(new View.OnClickListener() {

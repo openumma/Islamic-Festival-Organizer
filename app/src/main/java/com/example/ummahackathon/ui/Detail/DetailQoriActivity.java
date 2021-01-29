@@ -8,12 +8,14 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.TextView;
 
+import com.example.ummahackathon.ui.Jadwal.JadwalPengisiAcaraActivity;
 import com.example.ummahackathon.ui.Pendaftaran.FormPendaftaran;
 import com.example.ummahackathon.Model.GetDetailQori;
 import com.example.ummahackathon.Model.ListDataQori;
 import com.example.ummahackathon.R;
 import com.example.ummahackathon.Rest.ApiClient;
 import com.example.ummahackathon.Rest.ApiInterface;
+import com.example.ummahackathon.ui.Video.VideoActivity;
 
 import java.util.List;
 
@@ -24,7 +26,7 @@ import retrofit2.Response;
 public class DetailQoriActivity extends AppCompatActivity {
     TextView tv_nama_qori,tv_umur_qori,tv_alamat_qori,tv_karir_qori,tv_deskripsi_qori;
     ApiInterface apiInterface;
-    Button btn_daftar;
+    Button btn_daftar,btn_video_qori,btn_jadwal_qori;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -35,6 +37,22 @@ public class DetailQoriActivity extends AppCompatActivity {
         tv_karir_qori = findViewById(R.id.karirQori);
         tv_deskripsi_qori = findViewById(R.id.descQori);
         btn_daftar = findViewById(R.id.btn_hubungi_qori);
+        btn_video_qori = findViewById(R.id.btn_video_qori);
+        btn_jadwal_qori = findViewById(R.id.btn_jadwal_qori);
+        btn_video_qori.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(DetailQoriActivity.this, VideoActivity.class);
+                startActivity(intent);
+            }
+        });
+        btn_jadwal_qori.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(DetailQoriActivity.this, JadwalPengisiAcaraActivity.class);
+                startActivity(intent);
+            }
+        });
         btn_daftar.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {

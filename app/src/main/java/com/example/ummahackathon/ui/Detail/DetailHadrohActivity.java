@@ -8,12 +8,14 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.TextView;
 
+import com.example.ummahackathon.ui.Jadwal.JadwalPengisiAcaraActivity;
 import com.example.ummahackathon.ui.Pendaftaran.FormPendaftaran;
 import com.example.ummahackathon.Model.GetDataHadroh;
 import com.example.ummahackathon.Model.ListDataHadroh;
 import com.example.ummahackathon.R;
 import com.example.ummahackathon.Rest.ApiClient;
 import com.example.ummahackathon.Rest.ApiInterface;
+import com.example.ummahackathon.ui.Video.VideoActivity;
 
 import java.util.List;
 
@@ -23,7 +25,7 @@ import retrofit2.Response;
 
 public class DetailHadrohActivity extends AppCompatActivity {
     TextView tv_nama_hadroh,tv_deskripsi_hadroh,tv_alamat_hadroh;
-    Button btn_daftar;
+    Button btn_daftar,btn_video_hadroh,btn_jadwal_hadroh;
     ApiInterface apiInterface;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -33,6 +35,21 @@ public class DetailHadrohActivity extends AppCompatActivity {
         tv_deskripsi_hadroh = findViewById(R.id.descHadroh);
         tv_alamat_hadroh = findViewById(R.id.alamatHadroh);
         btn_daftar = findViewById(R.id.btn_hubungi_hadroh);
+        btn_video_hadroh = findViewById(R.id.btn_video_hadroh);
+        btn_video_hadroh.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(DetailHadrohActivity.this, VideoActivity.class);
+                startActivity(intent);
+            }
+        });
+        btn_jadwal_hadroh.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(DetailHadrohActivity.this, JadwalPengisiAcaraActivity.class);
+                startActivity(intent);
+            }
+        });
         btn_daftar.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
