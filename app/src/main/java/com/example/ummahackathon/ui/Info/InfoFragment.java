@@ -30,7 +30,7 @@ public class InfoFragment extends Fragment {
                 final View v = layoutInflater.inflate(R.layout.premium,null);
                 alertDialogBuilder.setView(v);
                 alertDialogBuilder
-                        .setMessage("adasdads")
+                        .setMessage(" ")
                         .setCancelable(false)
                         .setPositiveButton("BERLANGGANAN", new DialogInterface.OnClickListener() {
                             @Override
@@ -64,7 +64,7 @@ public class InfoFragment extends Fragment {
                 final View v = layoutInflater.inflate(R.layout.donasi,null);
                 alertDialogBuilder.setView(v);
                 alertDialogBuilder
-                        .setMessage("adasdads")
+                        .setMessage(" ")
                         .setCancelable(false)
                         .setPositiveButton("DONASI", new DialogInterface.OnClickListener() {
                             @Override

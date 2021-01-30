@@ -41,6 +41,14 @@
         android:textColor="#707070"
         android:textSize="24sp"
         android:textStyle="bold"
+        android:layout_marginBottom="25dp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/pendaftaran_sukses" />
+    <Button
+        android:id="@+id/btn_kemabali_keberanda"
+        android:text="KEMBALI KE BERANDA"
+        android:layout_marginTop="35dp"
+        android:layout_gravity="center"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"/>
 </LinearLayout>
