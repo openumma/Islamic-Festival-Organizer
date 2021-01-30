@@ -36,6 +36,7 @@ public class DetailHadrohActivity extends AppCompatActivity {
         tv_alamat_hadroh = findViewById(R.id.alamatHadroh);
         btn_daftar = findViewById(R.id.btn_hubungi_hadroh);
         btn_video_hadroh = findViewById(R.id.btn_video_hadroh);
+        btn_jadwal_hadroh = findViewById(R.id.btn_jadwal_hadroh);
         btn_video_hadroh.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {

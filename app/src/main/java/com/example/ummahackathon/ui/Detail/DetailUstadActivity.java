@@ -41,6 +41,7 @@ public class DetailUstadActivity extends AppCompatActivity {
         iv_foto = findViewById(R.id.foto_penceramah);
         btn_daftar = findViewById(R.id.btn_hubungi_ustad);
         btn_video_ustad = findViewById(R.id.btn_video_ustad);
+        btn_jadwal_ustad = findViewById(R.id.btn_jadwal_ustad);
         btn_video_ustad.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
